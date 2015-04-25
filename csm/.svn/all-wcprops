@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/borg/!svn/ver/15861/planar_icp/trunk/csm
+END
+laser_ref.carmen
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/borg/!svn/ver/15853/planar_icp/trunk/csm/laser_ref.carmen
+END
+laser_sens.carmen
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/borg/!svn/ver/15853/planar_icp/trunk/csm/laser_sens.carmen
+END
+laser_ref.json
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/borg/!svn/ver/15853/planar_icp/trunk/csm/laser_ref.json
+END
+laser_sens.json
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/borg/!svn/ver/15853/planar_icp/trunk/csm/laser_sens.json
+END

@@ -1,0 +1,11 @@
+K 10
+svn:ignore
+V 6
+build
+
+K 13
+svn:externals
+V 25
+^/cmake-libs/trunk cmake
+
+END

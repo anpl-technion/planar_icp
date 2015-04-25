@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/borg/!svn/ver/20982/planar_icp/trunk
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/borg/!svn/ver/15693/planar_icp/trunk/README.txt
+END
+.cproject
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/borg/!svn/ver/15899/planar_icp/trunk/.cproject
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/borg/!svn/ver/20976/planar_icp/trunk/CMakeLists.txt
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/borg/!svn/ver/15770/planar_icp/trunk/.project
+END
+planar_icp.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/borg/!svn/ver/20982/planar_icp/trunk/planar_icp.h
+END

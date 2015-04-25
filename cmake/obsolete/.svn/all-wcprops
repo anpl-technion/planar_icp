@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/borg/!svn/ver/12261/cmake-libs/trunk/obsolete
+END
+FindWrap.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/borg/!svn/ver/12261/cmake-libs/trunk/obsolete/FindWrap.cmake
+END
+FindGTSAM.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/borg/!svn/ver/12261/cmake-libs/trunk/obsolete/FindGTSAM.cmake
+END
+FindGTSAM_UNSTABLE.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/borg/!svn/ver/12261/cmake-libs/trunk/obsolete/FindGTSAM_UNSTABLE.cmake
+END
+FindCppUnitLite.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/borg/!svn/ver/12261/cmake-libs/trunk/obsolete/FindCppUnitLite.cmake
+END

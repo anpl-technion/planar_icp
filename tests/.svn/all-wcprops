@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/borg/!svn/ver/20975/planar_icp/trunk/tests
+END
+testSaliency.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/borg/!svn/ver/20975/planar_icp/trunk/tests/testSaliency.cpp
+END
+ICP_scan5_scan6.eps
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/borg/!svn/ver/20697/planar_icp/trunk/tests/ICP_scan5_scan6.eps
+END
+ICP_scan6_scan5.eps
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/borg/!svn/ver/20697/planar_icp/trunk/tests/ICP_scan6_scan5.eps
+END
+scan1.txt
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/borg/!svn/ver/20535/planar_icp/trunk/tests/scan1.txt
+END
+scan2.txt
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/borg/!svn/ver/20535/planar_icp/trunk/tests/scan2.txt
+END
+scan3.txt
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/borg/!svn/ver/20637/planar_icp/trunk/tests/scan3.txt
+END
+scan4.txt
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/borg/!svn/ver/20637/planar_icp/trunk/tests/scan4.txt
+END
+testFilteringUtility.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/borg/!svn/ver/20975/planar_icp/trunk/tests/testFilteringUtility.cpp
+END
+scan5.txt
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/borg/!svn/ver/20697/planar_icp/trunk/tests/scan5.txt
+END
+scan6.txt
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/borg/!svn/ver/20697/planar_icp/trunk/tests/scan6.txt
+END
+scan7.txt
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/borg/!svn/ver/20887/planar_icp/trunk/tests/scan7.txt
+END
+testPLICP.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/borg/!svn/ver/20861/planar_icp/trunk/tests/testPLICP.cpp
+END
+scan8.txt
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/borg/!svn/ver/20887/planar_icp/trunk/tests/scan8.txt
+END
+testPlanarICP.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/borg/!svn/ver/20803/planar_icp/trunk/tests/testPlanarICP.cpp
+END

@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/borg/!svn/ver/20975/planar_icp/trunk/cpp
+END
+planarICP.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/borg/!svn/ver/16354/planar_icp/trunk/cpp/planarICP.cpp
+END
+csm_interface.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/borg/!svn/ver/15899/planar_icp/trunk/cpp/csm_interface.h
+END
+Saliency.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/borg/!svn/ver/20887/planar_icp/trunk/cpp/Saliency.h
+END
+planarICP_matlab.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/borg/!svn/ver/20856/planar_icp/trunk/cpp/planarICP_matlab.cpp
+END
+planarICP.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/borg/!svn/ver/16354/planar_icp/trunk/cpp/planarICP.h
+END
+GslErrorHandler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/borg/!svn/ver/20637/planar_icp/trunk/cpp/GslErrorHandler.cpp
+END
+FilteringUtility.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/borg/!svn/ver/20975/planar_icp/trunk/cpp/FilteringUtility.cpp
+END
+planarICP_matlab.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/borg/!svn/ver/15899/planar_icp/trunk/cpp/planarICP_matlab.h
+END
+csm_interface.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/borg/!svn/ver/18455/planar_icp/trunk/cpp/csm_interface.cpp
+END
+GslErrorHandler.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/borg/!svn/ver/20637/planar_icp/trunk/cpp/GslErrorHandler.h
+END
+FilteringUtility.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/borg/!svn/ver/20975/planar_icp/trunk/cpp/FilteringUtility.h
+END
+Saliency.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/borg/!svn/ver/20891/planar_icp/trunk/cpp/Saliency.cpp
+END

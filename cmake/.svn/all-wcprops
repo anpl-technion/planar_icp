@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/borg/!svn/ver/20364/cmake-libs/trunk
+END
+GtsamBuildTypes.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/borg/!svn/ver/20353/cmake-libs/trunk/GtsamBuildTypes.cmake
+END
+GtsamTesting.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/borg/!svn/ver/20353/cmake-libs/trunk/GtsamTesting.cmake
+END
+GtsamMakeConfigFile.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/borg/!svn/ver/18479/cmake-libs/trunk/GtsamMakeConfigFile.cmake
+END
+dllexport.h.in
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/borg/!svn/ver/17482/cmake-libs/trunk/dllexport.h.in
+END
+FindEigen3.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/borg/!svn/ver/16189/cmake-libs/trunk/FindEigen3.cmake
+END
+FindGooglePerfTools.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/borg/!svn/ver/19238/cmake-libs/trunk/FindGooglePerfTools.cmake
+END
+FindMKL.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/borg/!svn/ver/20352/cmake-libs/trunk/FindMKL.cmake
+END
+GtsamPrinting.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/borg/!svn/ver/10171/cmake-libs/trunk/GtsamPrinting.cmake
+END
+GtsamPythonWrap.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/borg/!svn/ver/20092/cmake-libs/trunk/GtsamPythonWrap.cmake
+END
+GtsamMatlabWrap.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/borg/!svn/ver/20364/cmake-libs/trunk/GtsamMatlabWrap.cmake
+END
+Config.cmake.in
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/borg/!svn/ver/18479/cmake-libs/trunk/Config.cmake.in
+END
+FindTBB.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/borg/!svn/ver/18444/cmake-libs/trunk/FindTBB.cmake
+END
