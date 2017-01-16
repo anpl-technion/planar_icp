@@ -90,52 +90,53 @@ endforeach(test_src_file)
 
 ############################### Wrapper ###############################################
 # Matlab wrapping (adapted from ddfsam)
-include(GtsamMatlabWrap)
+if (NOT "${GtsamMatlabWrap}" STREQUAL "")
+	include(GtsamMatlabWrap)
 
-# NOTE: compile flags need to be split out here because mex compiling doesn't use any of
-# cmake's tools for adding paths/libraries. 
+	# NOTE: compile flags need to be split out here because mex compiling doesn't use any of
+	# cmake's tools for adding paths/libraries. 
 
-# Include flags 
-set(CSM_INCLUDE_FLAGS "")
-foreach(include_path ${CSM_INCLUDE_DIRS})
-    set(CSM_INCLUDE_FLAGS "-I${include_path} ${CSM_INCLUDE_FLAGS}")
-endforeach()
-message(STATUS "CSM_INCLUDE_FLAGS: [${CSM_INCLUDE_FLAGS}]")
+	# Include flags 
+	set(CSM_INCLUDE_FLAGS "")
+	foreach(include_path ${CSM_INCLUDE_DIRS})
+	    set(CSM_INCLUDE_FLAGS "-I${include_path} ${CSM_INCLUDE_FLAGS}")
+	endforeach()
+	message(STATUS "CSM_INCLUDE_FLAGS: [${CSM_INCLUDE_FLAGS}]")
 
-# Linker paths
-set(CSM_LIBRARY_DIR_FLAGS "")
-foreach(link_path ${CSM_LIBRARY_DIRS})
-    set(CSM_LIBRARY_DIR_FLAGS "-L${link_path} ${CSM_LIBRARY_DIR_FLAGS}")
-endforeach()
-message(STATUS "CSM_LIBRARY_DIR_FLAGS: [${CSM_LIBRARY_DIR_FLAGS}]")
+	# Linker paths
+	set(CSM_LIBRARY_DIR_FLAGS "")
+	foreach(link_path ${CSM_LIBRARY_DIRS})
+	    set(CSM_LIBRARY_DIR_FLAGS "-L${link_path} ${CSM_LIBRARY_DIR_FLAGS}")
+	endforeach()
+	message(STATUS "CSM_LIBRARY_DIR_FLAGS: [${CSM_LIBRARY_DIR_FLAGS}]")
 
-# Library flags
-set(CSM_LIBRARY_FLAGS "")
-foreach(lib ${CSM_LIBRARIES})
-    set(CSM_LIBRARY_FLAGS "-l${lib} ${CSM_LIBRARY_FLAGS}")
-endforeach()
+	# Library flags
+	set(CSM_LIBRARY_FLAGS "")
+	foreach(lib ${CSM_LIBRARIES})
+	    set(CSM_LIBRARY_FLAGS "-l${lib} ${CSM_LIBRARY_FLAGS}")
+	endforeach()
 
-# Standard configuration
-set(PLANAR_ICP_TOOLBOX_FLAGS 
-#    ${GTSAM_BUILD_MEX_BINARY_FLAGS} 
-#    -I${PROJECT_SOURCE_DIR} -I${PROJECT_SOURCE_DIR}/cpp
-#    -I${Boost_INCLUDE_DIR} -I${MEX_INCLUDE_ROOT} 
-#    ${CSM_INCLUDE_FLAGS} ${CSM_LIBRARY_DIR_FLAGS} ${CSM_LIBRARY_FLAGS}
-#    -I${GTSAM_INCLUDE_DIR} -I${WRAP_HEADER_PATH} -Wl,-rpath,${CMAKE_BINARY_DIR}:${CMAKE_INSTALL_PREFIX}/lib
-    )
-set(PLANAR_ICP_LIBRARY_DEPS ${gtsam_deps} planar_icp-shared)
-set(GTSAM_BUILD_MEX_BIN ON)
+	# Standard configuration
+	set(PLANAR_ICP_TOOLBOX_FLAGS 
+	#    ${GTSAM_BUILD_MEX_BINARY_FLAGS} 
+	#    -I${PROJECT_SOURCE_DIR} -I${PROJECT_SOURCE_DIR}/cpp
+	#    -I${Boost_INCLUDE_DIR} -I${MEX_INCLUDE_ROOT} 
+	#    ${CSM_INCLUDE_FLAGS} ${CSM_LIBRARY_DIR_FLAGS} ${CSM_LIBRARY_FLAGS}
+	#    -I${GTSAM_INCLUDE_DIR} -I${WRAP_HEADER_PATH} -Wl,-rpath,${CMAKE_BINARY_DIR}:${CMAKE_INSTALL_PREFIX}/lib
+	    )
+	set(PLANAR_ICP_LIBRARY_DEPS ${gtsam_deps} planar_icp-shared)
+	set(GTSAM_BUILD_MEX_BIN ON)
 
-# User-friendly wrapping function.  Builds a mex module from the provided
-# interfaceHeader.  For example, for the interface header /path/to/gtsam.h,
-# this will build the wrap module 'gtsam'.
-# Params:
-#   interfaceHeader  : Absolute or relative path to the interface definition file
-#   linkLibraries    : All dependent CMake target names, library names, or full library paths
-#   extraIncludeDirs : Extra include directories, in addition to those already passed to include_directories(...)
-#   extraMexFlags    : Any additional compiler flags
-wrap_and_install_library("planar_icp.h" "${PLANAR_ICP_LIBRARY_DEPS}" "" "${PLANAR_ICP_TOOLBOX_FLAGS}")
-
+	# User-friendly wrapping function.  Builds a mex module from the provided
+	# interfaceHeader.  For example, for the interface header /path/to/gtsam.h,
+	# this will build the wrap module 'gtsam'.
+	# Params:
+	#   interfaceHeader  : Absolute or relative path to the interface definition file
+	#   linkLibraries    : All dependent CMake target names, library names, or full library paths
+	#   extraIncludeDirs : Extra include directories, in addition to those already passed to include_directories(...)
+	#   extraMexFlags    : Any additional compiler flags
+	wrap_and_install_library("planar_icp.h" "${PLANAR_ICP_LIBRARY_DEPS}" "" "${PLANAR_ICP_TOOLBOX_FLAGS}")
+endif()
 # Install config and export files
 GtsamMakeConfigFile(planar_icp)
 # export(TARGETS ${planar_icp_EXPORTED_TARGETS} FILE planar_icp-exports.cmake)
