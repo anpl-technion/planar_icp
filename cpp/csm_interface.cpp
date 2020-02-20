@@ -6,6 +6,7 @@
  * @author Alex Cunningham
  */
 
+#include <iostream>
 #include <csm_interface.h>
 
 using namespace gtsam;
@@ -79,7 +80,7 @@ const char* friendly_pose(const double*pose) {
 }
 /* *************************************************************** */
 void printLaserDataCSM(LDP ld) {
-  cout << "nr rays: " << ld->nrays << endl;
+  std::cout << "nr rays: " << ld->nrays << endl;
 
   cout << "min_theta: " << ld->min_theta << endl;
   cout << "max_theta: " << ld->max_theta << endl;

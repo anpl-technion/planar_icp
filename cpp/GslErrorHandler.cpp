@@ -5,6 +5,7 @@
  * @brief Overrides default GSL error behavior using exceptions
  */
 
+// #include <minmax_def.h>
 #include <GslErrorHandler.h>
 
 GslErrorHandler::GslErrorHandler():oldHandler(0), enabled(false){}

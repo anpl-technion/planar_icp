@@ -3,7 +3,7 @@
  * @author Jason Antico
  * @brief Implements planar icp algorithm.
  */
-
+// #include <minmax_def.h>
 #include <planarICP.h>
 
 // Using numerical derivative to calculate d(Pose3::Expmap)/dw

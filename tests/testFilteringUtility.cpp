@@ -31,7 +31,7 @@ TEST( planar_icp, filtering ) {
 		Values result = filterByChr(values, 'A');
 		EXPECT_LONGS_EQUAL(result.size(), 2); // A101, A102
 		EXPECT_LONGS_EQUAL(values.size(), 3); // should not change
-		KeyList l = result.keys();
+		KeyVector l = result.keys();
 
 		int i=0;
 		BOOST_FOREACH(const Values::KeyValuePair& key_value, result) {

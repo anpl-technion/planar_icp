@@ -4,6 +4,7 @@
  * @brief Implements planar icp algorithm.
  */
 
+// #include <minmax_def.h>
 #include <planarICP_matlab.h>
 #include <csm_interface.h>
 #include <GslErrorHandler.h>

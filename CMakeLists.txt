@@ -2,6 +2,8 @@ cmake_minimum_required(VERSION 2.6)
 enable_testing()
 project(planar_icp CXX C)
 
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -Wno-deprecated-declarations")
+
 # Frank: I seem to have to do this pretty early or it does not stick
 set(GTSAM_TOOLBOX_INSTALL_PATH "${PROJECT_SOURCE_DIR}/matlab/planar_icp" CACHE PATH "Install folder for matlab toolbox - defaults to inside project")
 

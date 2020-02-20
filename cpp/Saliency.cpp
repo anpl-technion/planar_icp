@@ -5,7 +5,7 @@
  * @author Daniel Keyes
  * @author Vadim Indelman
  */
-
+// #include <minmax_def.h>
 #include <Saliency.h>
 
 #include <boost/random/variate_generator.hpp>
