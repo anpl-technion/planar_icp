@@ -80,7 +80,7 @@ const char* friendly_pose(const double*pose) {
 }
 /* *************************************************************** */
 void printLaserDataCSM(LDP ld) {
-  std::cout << "nr rays: " << ld->nrays << endl;
+  cout << "nr rays: " << ld->nrays << endl;
 
   cout << "min_theta: " << ld->min_theta << endl;
   cout << "max_theta: " << ld->max_theta << endl;
