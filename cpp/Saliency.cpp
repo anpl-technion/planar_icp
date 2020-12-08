@@ -37,12 +37,12 @@ double calculateScanSaliency(const Matrix& scan, int seed,
 		double stoppingThresh, double inlierThreshSq, bool use_plicp_delta){
   Matrix x[N];
   vector<const Matrix*> xVec;
-  Matrix xSum = zeros(3,1);
-  Matrix covSum = zeros(3,3);
+  Matrix xSum = Matrix::Zero(3,1);
+  Matrix covSum = Matrix::Zero(3,3);
 
-  boost::mt19937 generator(seed);
-  boost::normal_distribution<double> normalDistribution(0.0, 1.0);
-  boost::variate_generator<boost::mt19937, boost::normal_distribution<double> >
+  std::mt19937 generator(seed);// prior to C++11 part of boost (boost::mt19937)
+  std::normal_distribution<double> normalDistribution(0.0, 1.0);
+  boost::variate_generator<std::mt19937, std::normal_distribution<double> >
   	randNorm(generator, normalDistribution);
 
   for(int k=0; k < N; k++){

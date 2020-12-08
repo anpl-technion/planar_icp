@@ -80,7 +80,7 @@ pair<ReturnValue,Matrix> PLICP(const Matrix& pXY, const Matrix& qXY, const Pose2
   }
 
   ReturnValue value;
-  Matrix cov(eye(3));
+  Matrix cov(Matrix::Identity(3,3));
   if (noErrors && result.valid) {
 	  value.delta = Pose2(result.x[0], result.x[1], result.x[2]);
 	  value.numIters = result.iterations;

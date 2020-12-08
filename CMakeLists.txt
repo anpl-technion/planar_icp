@@ -58,12 +58,19 @@ set(planar_icp_lib_source
     cpp/Saliency.cpp
     cpp/FilteringUtility.cpp
 )
-set(planar_icp_tests_source 
-    tests/testPlanarICP.cpp 
-    tests/testPLICP.cpp
-    tests/testSaliency.cpp
-    tests/testFilteringUtility.cpp
-)
+
+# Unit tests based on old CppUnitLite testing framework are not built by default.
+# To build them, set this flag to ON and make sure CppUnitLite exists on your system.
+option(PlanarICP_BUILD_TESTS "Build unit tests based on the old CppUnitLite testing framework." OFF)
+MESSAGE(STATUS "Build tests: ${PlanarICP_BUILD_TESTS}")
+if ("${PlanarICP_BUILD_TESTS}" STREQUAL "ON")
+	set(planar_icp_tests_source 
+	    tests/testPlanarICP.cpp 
+	    tests/testPLICP.cpp
+	    tests/testSaliency.cpp
+	    tests/testFilteringUtility.cpp
+	)
+endif()
 
 # Build shared library 
 # Include installed versions
